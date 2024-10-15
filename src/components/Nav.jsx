@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import './nav.css'
+import logo from '../../public/logo.jpg'
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -25,7 +26,7 @@ const Nav = () => {
     <nav className={`navbar navbar-expand-lg ${isScrolled ? 'bg-white' : 'bg-transparent'} py-3 transition`} style={{position: "fixed", width: "100%", zIndex: "40"}}>
       <div className="container-fluid d-flex justify-content-between align-items-center">
         {/* Logo Image */}
-        <img src="../../public/logo.jpg" alt="Logo" className="me-3" style={{ maxWidth: '150px' }} />
+        <img src={logo} alt="Logo" className="me-3" style={{ maxWidth: '150px' }} />
 
         {/* Hamburger Toggler Button */}
         <button 

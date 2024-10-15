@@ -1,0 +1,43 @@
+/* Base styles for the card */
+.card {
+  background-color: white; /* Initial background color */
+  color: black; /* Initial text color */
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  /* Smooth transition for background and text color */
+}
+
+/* Hover effect: change background to black and text to orange */
+.card:hover {
+  background-color: #EEEEEE;
+  color: #000000; /* Orange color for the text on hover */
+}
+
+/* Change SVG fill color on hover */
+.card svg {
+  fill: #FE772F; /* Orange for the SVG icons on hover */
+}
+.card:hover svg {
+  fill: #FE772F; /* Orange for the SVG icons on hover */
+}
+
+/* Icon size and alignment */
+.feature-item {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  margin: 0.5rem 0;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem; /* Adjust title font size */
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(160, 160, 160, 0.2);
+}

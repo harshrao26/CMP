@@ -1,0 +1,78 @@
+.custom-faq-button {
+  background-color: white !important; /* Set background color to white */
+  border: 1px solid #ced4da; /* Optional: Add a border */
+  transition: background-color 0.8s; /* Smooth transition */
+}
+
+.custom-faq-button:hover {
+  background-color: #f8f9fa; /* Change to a light gray on hover */
+  color: #000; /* Darken text color on hover */
+}
+
+@keyframes boxAnimation {
+  0% {
+      margin-bottom: 20%; /* Corrected typo here */
+      backdrop-filter: blur(0px); /* Start with no blur */
+  }
+  50% {
+      transform: scale(1.05); /* Scale up a bit */
+      backdrop-filter: blur(5px); /* Slight blur */
+  }
+  100% {
+      margin-bottom: -20%; /* Return to smaller size */
+      backdrop-filter: blur(0px); /* Remove blur */
+  }
+}
+
+.box {
+  position: absolute; /* Ensure it's positioned correctly */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the box */
+  width: 80%;
+  height: 50%;
+  background-color: #FE6D20; /* Background color */
+  z-index: 1; /* Changed to a positive value */
+  border-radius: 10px; /* Rounded corners */
+  animation: boxAnimation 15s ease-in-out infinite alternate-reverse; /* Infinite animation */
+}
+
+.hero {
+  overflow: hidden; /* Ensure overflow is hidden */
+  position: relative; /* Required for absolute positioning of children */
+}
+
+/* Animation on hover */
+.hero:hover .box {
+  transform: scale(1.05); /* Scale up the box on hover */
+  backdrop-filter: blur(15px); /* Increase the blur effect on hover */
+}
+
+.marquee-container {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Full width */
+  background: #f8f9fa; /* Light background for contrast */
+}
+
+.marquee {
+  display: inline-flex; /* Flexbox for horizontal alignment */
+  animation: marquee 20s linear infinite; /* Infinite scrolling effect */
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0); /* Start position */
+  }
+  100% {
+      transform: translateX(-50%); /* End position to create the scroll effect */
+  }
+}
+
+.card {
+  transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}

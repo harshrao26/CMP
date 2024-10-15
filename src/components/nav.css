@@ -1,0 +1,12 @@
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .bg-transparent {
+    background-color: transparent !important; /* Override Bootstrap's default */
+  }
+  
+  .bg-white {
+    background-color: white !important; /* Ensure the background color is white */
+  }
+  

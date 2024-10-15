@@ -1,0 +1,49 @@
+/* Black background */
+.bg-black {
+    background-color: #000;
+  }
+.roundedd{
+    border-radius: 0px 0px 60px 60px;
+}
+/* Image sizing to fit the container */
+.custom-img {
+    object-fit: cover;
+    margin-bottom: 20px;
+    height: 99%; /* Ensures it takes up the height of its container */
+    max-height: 400px; /* Restrict the maximum height if needed */
+  }
+  
+  /* Service box styling */
+  .service-box {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
+    color: #fff; /* Text color white for black background */
+  }
+  
+  .service-box:hover {
+    background-color: #333;
+    color: #fe772f; /* Orange color for hover text */
+  }
+  
+  /* Service icon */
+  .service-icon {
+    font-size: 32px;
+    color: #fe772f;
+  }
+  
+  .service-box h5 {
+    font-weight: bold;
+    color: #fff; /* Heading text color */
+  }
+  
+  .service-box a {
+    color: #fe772f; /* Orange link color */
+    text-decoration: none;
+  }
+  
+  .service-box a:hover {
+    text-decoration: underline;
+  }
+  
